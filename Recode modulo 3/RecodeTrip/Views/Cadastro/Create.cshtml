@@ -1,0 +1,45 @@
+@model RecodeTrip.Models.Cliente
+@{
+    ViewData["Title"]="Cadastro";
+
+}
+
+
+<h4>Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome_completo" class="control-label">Nome Completo</label>
+                <input asp-for="Nome_completo" class="form-control" />
+                <span asp-validation-for="Nome_completo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CPF" class="control-label"></label>
+                <input asp-for="CPF" class="form-control" />
+                <span asp-validation-for="CPF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Celular" class="control-label"></label>
+                <input asp-for="Celular" class="form-control" />
+                <span asp-validation-for="Celular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ViagemId_viagem" class="control-label">Destino que mais interessou</label>
+                <select asp-for="ViagemId_viagem" class ="form-control" asp-items="ViewBag.ViagemId_viagem"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Concluir Cadastro" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+

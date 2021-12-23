@@ -1,0 +1,66 @@
+@model IEnumerable<RecodeTrip.Models.Viagem>
+
+@{
+    ViewData["Title"]="Destino";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Nome Da Viagem
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Origem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destino)
+            </th>
+            <th>
+               Preço
+            </th>
+            <th>
+                Data de Embarque
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Companhia)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+     <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Origem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data_ida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Companhia.Nome)
+            </td>
+        </tr>
+}
+    </tbody>
+
+</table>
+</body>
+</html>

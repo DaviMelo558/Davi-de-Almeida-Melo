@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/styleMain.css" />
+    <script src="../js/script.js"></script>
+     <title>Recode Trip</title>
+</head>
+<body> 
+  
+        <nav>
+            <ul class="menu-h">
+                <div><a href="../html/main.html">
+                    <li >
+                    
+                    <h1 id="logo">RecodeTrip</h1>    
+                    
+                    </li></a>
+                    <li>
+                        <a href="../html/contato.html">Contatos</a>
+                    </li>
+                    <li>
+                        <a href="../html/promocao.html">Promoção</a>
+                        
+                    </li>
+                    <li>
+                         <a href="destinos.html">Destino</a>
+                    </li>
+                </div>   
+            </ul>  
+        </nav>
+       
+        <h2>Após o cadastro iremos contactá-lo via E-mail.</h2>
+
+
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+          <div class="row">
+            <label class="required" for="name"> Nome:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+            <span id="name_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="email">Email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+          </div>
+            <input id="submit_button" type="submit" value="Send email" />
+        </form>
+
+</body>
+</html>

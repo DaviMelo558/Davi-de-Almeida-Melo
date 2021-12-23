@@ -1,0 +1,1 @@
+dotnet aspnet-codegenerator --project "C:\Users\Davi\Desktop\fullStack\Davi de Almeida Melo\Recode modulo 3\RecodeTrip" controller --force --controllerName ClienteController --model RecodeTrip.Models.Cliente --dataContext RecodeTrip.Data.ViagemContext --relativeFolderPath Controllers --controllerNamespace RecodeTrip.Controllers

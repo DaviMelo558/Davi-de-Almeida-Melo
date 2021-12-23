@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"]="Admin";
+}
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand text-warning" asp-area="" asp-controller="Admin" asp-action="Index">Modo Administrador</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Viagem" asp-action="Index">Viagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Cliente" asp-action="Index">Cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Companhia" asp-action="Index">Companhias</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1>
+            Este é o ambiente de administrador que só pode ser acessado pelos funcionários da RecodeTrip e não pelo cliente.
+            Devido a falta de tempo para essa etapa não existe uma autenticação para entrar nesse modo mas estou ciente de que é necessário um login para o mesmo.
+        </h1>
